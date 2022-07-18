@@ -1,0 +1,5 @@
+<h2>Logged In Users</h2>
+
+<div *ngFor="let user of users; let i = index">
+  <app-user-status [user]="user" (blockEvent)="blockUser(i)"></app-user-status>
+</div>
